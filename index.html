@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+</head>
+<body>
+
+   <div class="container">
+    <div class="row justify-content-center my-5">
+        <div class="col-md-8">
+            <a data-bs-toggle="modal" class="btn btn-primary" href="#new_modal">Add New</a>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Product Managment</h2>
+                </div>
+                <div class="card-body">
+                    <table class="table shop-data ">
+                        <thead>
+                            <tr>
+                                <td>#</td>
+                                <td>Photo</td>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Quantity</td>
+                                <td>Total</td>
+                                <td>Action</td>
+                            </tr>
+                        </thead>
+                        <tbody class="product_table">
+                           
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- Add new product modal -->
+   <div class="modal fade" id="new_modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Upload a new Product</h3>
+                <button data-bs-dismiss="modal" class="btn-close"></button>
+                
+            </div>
+            <div class="modal-body">
+                <div class="msd"></div>
+                <form id="upload_form">
+
+                    <div class="my-3">
+                        Name
+                        <input name="name" class="form-control" type="text">
+                    </div>
+
+                    
+                    <div class="my-3">
+                        Price
+                        <input name="price" class="form-control" type="text">
+                    </div>
+                    
+                    <div class="my-3">
+                        Wuantity
+                        <input name="quantity" class="form-control" type="text">
+                    </div>
+                    
+                    <div class="my-3">
+                        Photo
+                        <input name="photo" class="form-control" type="text">
+                    </div>
+
+                    <div class="my-3">
+                        <input class="form-control btn btn-primary" value="Upload Product" type="submit">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+   </div>
+
+   <!-- View Product modal -->
+   <div class="modal fade" id="view_modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="single_view text-center">
+                    
+                </div>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+   </div>
+
+
+   
+   <!-- Edit product modal -->
+   <div class="modal fade" id="edit_modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Product</h3>
+                <button data-bs-dismiss="modal" class="btn-close"></button>
+                
+            </div>
+            <div class="modal-body">
+                <form id="edit_form">
+
+                    
+                </form>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+   </div>
+
+
+    <script src="./functions/function.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script>     
+
+    </script>
+</body>
+</html>
